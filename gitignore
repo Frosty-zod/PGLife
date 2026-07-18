@@ -1,0 +1,6 @@
+/react-app/node_modules/
+/react-app/npm-debug.log
+.env
+*.log
+.DS_Store
+Thumbs.db
