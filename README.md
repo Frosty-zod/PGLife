@@ -38,5 +38,9 @@ SQL queries use prepared statements, passwords are hashed with bcrypt (`password
 ## 🌐 Live Demo
 _(coming soon)_
 
+## 📜 Certificates
+- [Internshala Full Stack Web Development Certificate](Full%20Stack%20Web%20Development%20Certificate.pdf)
+- NSDC Certificate — coming soon
+
 ---
 *Built by Abhishek Rawat as part of the Internshala Full Stack Web Development course.*
