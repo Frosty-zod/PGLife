@@ -15,6 +15,8 @@ window.addEventListener("load", function () {
 
         // Set up request
         XHR.open("GET", "api/toggle_interested.php?property_id=" + property_id);
+        var csrf_token = document.querySelector('meta[name="csrf-token"]').content;
+        XHR.setRequestHeader("X-CSRF-Token", csrf_token);
 
         // Initiate the request
         XHR.send();

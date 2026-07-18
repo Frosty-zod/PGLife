@@ -48,7 +48,7 @@ $city_name = htmlspecialchars($_GET["city"]);
     include "includes/footer.php";
     ?>
 
-    <script src="js/main.1b7417bd.js"></script>
+    <script src="js/main.759f3ad8.js"></script>
 </body>
 
 </html>

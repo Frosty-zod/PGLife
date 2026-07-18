@@ -5,6 +5,12 @@ header('Content-Type: application/json');
 
 require "../includes/database_connect.php";
 
+$csrf_header = isset($_SERVER['HTTP_X_CSRF_TOKEN']) ? $_SERVER['HTTP_X_CSRF_TOKEN'] : '';
+if (empty($csrf_header) || empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $csrf_header)) {
+    echo json_encode(array("success" => false, "message" => "Invalid request. Please refresh the page and try again."));
+    return;
+}
+
 if (!isset($_SESSION['user_id'])) {
     echo json_encode(array("success" => false, "is_logged_in" => false));
     return;

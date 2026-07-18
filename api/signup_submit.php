@@ -1,5 +1,11 @@
 <?php
+session_start();
 require("../includes/database_connect.php");
+
+if (empty($_POST['csrf_token']) || empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+    echo json_encode(array("success" => false, "message" => "Invalid request. Please refresh the page and try again."));
+    return;
+}
 
 $full_name = $_POST['full_name'];
 $phone = $_POST['phone'];
