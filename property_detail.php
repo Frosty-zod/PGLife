@@ -37,6 +37,11 @@ if (!$result_2) {
     return;
 }
 $testimonials = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
+$testimonials = array_map(function ($row) {
+    return array_map(function ($value) {
+        return is_string($value) ? htmlspecialchars($value) : $value;
+    }, $row);
+}, $testimonials);
 
 
 $sql_3 = "SELECT a.* 
@@ -52,6 +57,11 @@ if (!$result_3) {
     return;
 }
 $amenities = mysqli_fetch_all($result_3, MYSQLI_ASSOC);
+$amenities = array_map(function ($row) {
+    return array_map(function ($value) {
+        return is_string($value) ? htmlspecialchars($value) : $value;
+    }, $row);
+}, $amenities);
 
 
 $sql_4 = "SELECT * FROM interested_users_properties WHERE property_id = ?";
