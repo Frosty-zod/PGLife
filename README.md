@@ -36,7 +36,7 @@ Tables: `users`, `properties`, `cities`, `amenities`, `properties_amenities`, `i
 SQL queries use prepared statements, passwords are hashed with bcrypt (`password_hash`), and output is escaped to prevent XSS.
 
 ## 🌐 Live Demo
-_(coming soon)_
+ [pglifeweb.infinityfreeapp.com](https://pglifeweb.infinityfreeapp.com)
 
 ## 📜 Certificates
 - [Internshala Full Stack Web Development Certificate](Full%20Stack%20Web%20Development%20Certificate.pdf)
