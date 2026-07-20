@@ -38,6 +38,9 @@ SQL queries use prepared statements, passwords are hashed with bcrypt (`password
 ## 🌐 Live Demo
  [pglifeweb.infinityfreeapp.com](https://pglifeweb.infinityfreeapp.com)
 
+## 📄 Project Report
+Full write-up covering approach, architecture, and security work: [PGLife_Project_Report.docx](PGLife_Project_Report.docx)
+
 ## 📜 Certificates
 - [Internshala Full Stack Web Development Certificate](Full%20Stack%20Web%20Development%20Certificate.pdf)
 - NSDC Certificate — coming soon
