@@ -43,7 +43,7 @@ Full write-up covering approach, architecture, and security work: [PGLife_Projec
 
 ## 📜 Certificates
 - [Internshala Full Stack Web Development Certificate](Full%20Stack%20Web%20Development%20Certificate.pdf)
-- [NSDC Certificate](NSDC_full_stack_web_development_certificate.pdf)
+- [NSDC Certificate](./NSDC%20full%20stack%20web%20development%20certificate.pdf)
 
 ---
 *Built by Abhishek Rawat as part of the Internshala Full Stack Web Development course.*
